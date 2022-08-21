@@ -65,7 +65,7 @@ body {
   font-weight: bold;
   margin: auto auto 5px 5px;
   padding: 8px 20px;
-  background-color: lightgray;
+  background-color: gray;
   color: white;
   border: 0;
 }
@@ -96,22 +96,233 @@ body {
   flex-grow: 1;
   margin: -15px auto 0 auto;
   width: 100%;
-  background-color: pink;
+  /* background-color: pink; */
+  background: rgb(255, 237, 210);
+  background: linear-gradient(
+    210deg,
+    rgba(255, 237, 210, 1) 0%,
+    rgba(177, 210, 175, 1) 100%
+  );
   border-radius: 20px;
 }
 #presentee {
   display: flex;
   flex-direction: column;
+  flex: 1 1 auto;
   margin: 25px auto 10px auto;
-  background-color: aqua;
+  /* background-color: aqua; */
   width: 80%;
   height: 100%;
 }
-.member {
-  background-color: red;
-  margin: auto;
+#presentee > #container {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 10px;
+  /* background-color: lightgreen; */
   width: 100%;
-  height: auto;
+  height: 100%;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+}
+.member {
+  display: flex;
+  background-color: red;
+  margin: 10px 0;
+  text-align: center;
+  width: 100%;
+  padding: 10px 0vh;
+  border-radius: 25px;
+}
+#info > #shop {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  margin: 0 0 0 20px;
+  /* background-color: beige; */
+}
+#highlight {
+  display: flex;
+  flex-grow: 1;
+  margin: 0 0 0 0;
+  background-color: red;
+  border-radius: 20px;
+}
+#availability {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 3;
+  margin: 5px 0 0 0;
+  /* background-color: turquoise; */
+  border-radius: 20px;
+}
+#head {
+  display: flex;
+  flex-grow: 0;
+  /* background-color: red; */
+  border-radius: 20px;
+  z-index: 2;
+}
+#head > #title {
+  font-size: x-large;
+  margin: auto 0 auto 10px;
+}
+#head > #count {
+  font-size: larger;
+  margin: auto 20px auto auto;
+}
+#floorPlan {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  /* background-color: seashell; */
+  background: rgb(255, 237, 210);
+  background: linear-gradient(
+    135deg,
+    rgba(255, 237, 210, 1) 0%,
+    rgba(177, 210, 175, 1) 100%
+  );
+  border-radius: 20px;
+}
+#floorPlan > .container1 {
+  display: flex;
+  flex-grow: 1;
+  margin: 10px 0 0 0;
+  /* border: 2px solid teal */
+}
+#floorPlan > .container2 {
+  display: flex;
+  flex-grow: 1;
+  margin: 0 0 10px 0;
+  /* border: 2px solid teal */
+}
+.floor {
+  display: flex;
+  margin: auto;
+  width: 80%;
+  height: 80%;
+  border: 1px solid gray;
+}
+#f1 {
+  display: grid;
+  margin: auto;
+  width: 80%;
+  height: 80%;
+  background-color: white;
+  /* border: 1px solid black; */
+}
+#sideCounter1 {
+  grid-column: 4 / span 6;
+  grid-row: 1 / span 2;
+}
+#sideCounter2 {
+  grid-column: 11 / span 6;
+  grid-row: 1 / span 2;
+}
+#longTable1 {
+  grid-column: 3 / span 8;
+  grid-row: 6 / span 8;
+}
+#longTable2 {
+  grid-column: 11 / span 8;
+  grid-row: 6 / span 8;
+}
+#miniTable {
+  grid-column: 19 / span 3;
+  grid-row: 1 / span 5;
+}
+#barSeat {
+  grid-column: 22 / span 1;
+  grid-row: 1 / span 14;
+}
+#barCounter {
+  grid-column: 22 / span 3;
+  grid-row: 1 / span 14;
+  border-top: 1px solid seashell;
+  border-right: 1px solid seashell;
+}
+#inBar {
+  grid-column: 24 / span 1;
+  grid-row: 1 / span 11;
+  border-top: 1px solid lightgray;
+  border-right: 1px solid lightgray;
+}
+#alley1 {
+  grid-column: 1 / span 24;
+  grid-row: 15 / span 2;
+}
+#pillar1 {
+  grid-column: 10 / span 1;
+  grid-row: 1 / span 1;
+  border-top: 1px solid lightgray;
+}
+#pillar2 {
+  grid-column: 10 / span 1;
+  grid-row: 16 / span 1;
+  border-bottom: 1px solid lightgray;
+}
+#piano {
+  grid-column: 2 / span 5;
+  grid-row: 16 / span 1;
+}
+#f2 {
+  display: grid;
+  margin: auto;
+  width: 80%;
+  height: 80%;
+  background-color: white;
+  /* border: 1px solid black; */
+}
+#alley2 {
+  grid-column: 1 / span 22;
+  grid-row: 1 / span 2;
+}
+#bigTable {
+  grid-column: 2 / span 4;
+  grid-row: 3 / span 6;
+}
+#partition1 {
+  grid-column: 7 / span 1;
+  grid-row: 3 / span 7;
+  border-bottom: 1px solid lightgray;
+}
+#smallTable1 {
+  grid-column: 8 / span 3;
+  grid-row: 7 / span 3;
+}
+#smallTable2 {
+  grid-column: 10 / span 3;
+  grid-row: 3 / span 3;
+}
+#smallTable3 {
+  grid-column: 13 / span 3;
+  grid-row: 7 / span 3;
+}
+#smallTable4 {
+  grid-column: 15 / span 3;
+  grid-row: 3 / span 3;
+}
+#smallTable5 {
+  grid-column: 18 / span 3;
+  grid-row: 7 / span 3;
+}
+#partition2 {
+  grid-column: 21 / span 1;
+  grid-row: 3 / span 7;
+  border-bottom: 1px solid lightgray;
+}
+.seatObject {
+  border: 1px solid lightgray;
+}
+.ghostObject {
+  border: 0px solid none;
+}
+.bgObject {
+  border: 1px solid gray;
+  background-color: lightgray;
+}
+.furnObject {
+  border: 1px solid gray;
+  background-color: lightgray;
 }
 
 #accessToken,
