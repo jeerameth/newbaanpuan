@@ -1,23 +1,17 @@
+html,
 body {
-  margin: 20px
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  /* background-color: green; */
 }
 
-button {
-  display: none;
-  width: 100%;
-  padding: 8px 0;
-  margin: 8px auto;
-  -moz-border-radius: 8px;
-  -webkit-border-radius: 8px;
-  border-radius: 8px;
+#user {
+  display: flex;
+  padding: 25px;
 }
-
-p {
-  border-bottom: 1px dashed #ddd
-}
-
-#pictureUrl {
-  margin: 0 auto;
+#profileImg {
+  margin: 0 0 0 0;
   width: 32%;
   display: -moz-box;
   display: -webkit-box;
@@ -31,9 +25,97 @@ p {
   -moz-border-radius: 256px;
   -webkit-border-radius: 256px;
   border-radius: 256px;
+  z-index: 2;
+}
+#user #detail {
+  display: flex;
+  flex-direction: column;
+  flex: auto;
+  /* background-color: red; */
+  /* padding: 5px; */
+}
+#profileName {
+  font-size: x-large;
+  font-weight: normal;
+  margin: 2px 20px 0 20px;
+}
+#profileStatus {
+  font-size: small;
+  font-weight: normal;
+  color: gray;
+  margin: 0 20px;
+}
+#user #detail #userMenu {
+  display: flex;
+  flex: auto;
+  /* background-color: red; */
+  padding: 0;
+}
+#checkIn {
+  border-radius: 30px;
+  font-weight: bold;
+  margin: auto 5px 5px 20px;
+  padding: 8px 20px;
+  background-color: darkorange;
+  color: white;
+  border: 0;
+}
+#addFriend {
+  border-radius: 30px;
+  font-weight: bold;
+  margin: auto auto 5px 5px;
+  padding: 8px 20px;
+  background-color: lightgray;
+  color: white;
+  border: 0;
 }
 
-#accessToken, #utouId {
+#info {
+  display: flex;
+  flex-grow: 1;
+  padding: 5px 25px;
+  /* background-color: pink; */
+}
+#info > #friend {
+  display: flex;
+  flex-direction: column;
+  /* background-color: lightcyan; */
+  width: 20%;
+}
+#friend > #filter {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  background-color: green;
+  padding: 5px;
+  z-index: 2;
+}
+#friend > #container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  margin: -15px auto 0 auto;
+  width: 100%;
+  background-color: pink;
+  border-radius: 20px;
+}
+#presentee {
+  display: flex;
+  flex-direction: column;
+  margin: 25px auto 10px auto;
+  background-color: aqua;
+  width: 80%;
+  height: 100%;
+}
+.member {
+  background-color: red;
+  margin: auto;
+  width: 100%;
+  height: auto;
+}
+
+#accessToken,
+#utouId {
   display: block;
-  overflow: auto
+  overflow: auto;
 }
