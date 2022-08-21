@@ -84,10 +84,8 @@ body {
 }
 #friend > #filter {
   display: flex;
-  flex-direction: column;
+  width: 60%;
   margin: 0 auto;
-  background-color: green;
-  padding: 5px;
   z-index: 2;
 }
 #friend > #container {
@@ -97,13 +95,10 @@ body {
   margin: -15px auto 0 auto;
   width: 100%;
   /* background-color: pink; */
-  background: rgb(255, 237, 210);
-  background: linear-gradient(
-    210deg,
-    rgba(255, 237, 210, 1) 0%,
-    rgba(177, 210, 175, 1) 100%
-  );
+  /* background: navajowhite; */
+  border: 0.5px solid  #f2f2f2  ;
   border-radius: 20px;
+  box-shadow: 1px 2px 2px #acacac;
 }
 #presentee {
   display: flex;
@@ -114,7 +109,7 @@ body {
   width: 80%;
   height: 100%;
 }
-#presentee > #container {
+#memberContainer {
   display: flex;
   flex-direction: column;
   flex: 1 1 10px;
@@ -133,6 +128,23 @@ body {
   padding: 10px 0vh;
   border-radius: 25px;
 }
+.memberImg {
+  margin: 0 0 0 0;
+  width: 100%;
+  display: -moz-box;
+  display: -webkit-box;
+  display: box;
+  -moz-box-pack: center;
+  -moz-box-align: center;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+  box-pack: center;
+  box-align: center;
+  -moz-border-radius: 256px;
+  -webkit-border-radius: 256px;
+  border-radius: 256px;
+  z-index: 2;
+}
 #info > #shop {
   display: flex;
   flex-direction: column;
@@ -144,8 +156,10 @@ body {
   display: flex;
   flex-grow: 1;
   margin: 0 0 0 0;
-  background-color: red;
+  background-color: white;
+  border: 0.5px solid  #f2f2f2  ;
   border-radius: 20px;
+  box-shadow: 1px 2px 2px #acacac;
 }
 #availability {
   display: flex;
@@ -163,8 +177,10 @@ body {
   z-index: 2;
 }
 #head > #title {
-  font-size: x-large;
-  margin: auto 0 auto 10px;
+  font-size: larger;
+  margin: auto 0 auto 5px;
+  /* font-family: 'Rubik Dirt', cursive; */
+  /* color: #3c9200; */
 }
 #head > #count {
   font-size: larger;
@@ -175,13 +191,10 @@ body {
   flex-direction: column;
   flex-grow: 1;
   /* background-color: seashell; */
-  background: rgb(255, 237, 210);
-  background: linear-gradient(
-    135deg,
-    rgba(255, 237, 210, 1) 0%,
-    rgba(177, 210, 175, 1) 100%
-  );
+  /* background: #F5E0B1; */
+  border: 0.5px solid  #f2f2f2  ;
   border-radius: 20px;
+  box-shadow: 1px 2px 2px #acacac;
 }
 #floorPlan > .container1 {
   display: flex;
